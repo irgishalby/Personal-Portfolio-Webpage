@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technical Documentation Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div>
+    <nav id="navbar">
+      <header>
+        <h2>Navigation</h2>
+      </header>
+      <a href="#HTML_and_CSS" class="nav-link">HTML and CSS</a>
+      <a href="#JavaScript_and_Java" class="nav-link">JavaScript and Java</a>
+      <a href="#Python_and_Ruby" class="nav-link">Python and Ruby</a>
+      <a href="#APIs_and_Data" class="nav-link">APIs and Data</a>
+      <a href="#Frameworks_and_Libraries" class="nav-link">Frameworks and Libraries</a>
+    </nav>
+  </div>
+
+  <main id="main-doc">
+    <section class="main-section" id="HTML_and_CSS">
+      <header>
+        <h2>HTML and CSS</h2>
+      </header>
+      <p>HTML and CSS are the basic building blocks of web development. HTML is used to structure content, while CSS is used for styling.</p>
+      <p>HTML stands for HyperText Markup Language and provides the basic structure of a webpage.</p>
+      <p>CSS, or Cascading Style Sheets, controls the layout and presentation of elements on the page.</p>
+      <code>&lt;!DOCTYPE html&gt;</code>
+      <code>&lt;html&gt;</code>
+      <code>&lt;head&gt;&lt;/head&gt;</code>
+      <code>&lt;body&gt;&lt;/body&gt;</code>
+      <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>
+      <ul>
+        <li>HTML tags structure content</li>
+        <li>CSS controls layout</li>
+        <li>Use CSS classes to style HTML elements</li>
+        <li>HTML5 introduced new semantic elements</li>
+        <li>CSS Flexbox is a powerful layout tool</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="JavaScript_and_Java">
+      <header>
+        <h2>JavaScript and Java</h2>
+      </header>
+      <p>JavaScript is a dynamic programming language used to create interactive effects within web browsers.</p>
+      <p>Java is a general-purpose programming language that is class-based and object-oriented.</p>
+      <p>While JavaScript is primarily used for client-side development, Java is often used for server-side applications.</p>
+      <code>const message = "Hello, World!";</code>
+      <code>function greet() { alert("Hello!"); }</code>
+      <code>class Car { constructor(make, model) { this.make = make; this.model = model; } }</code>
+      <code>let x = 5;</code>
+      <code>console.log(message);</code>
+      <ul>
+        <li>JavaScript is event-driven</li>
+        <li>Java is platform-independent</li>
+        <li>JavaScript can manipulate DOM elements</li>
+        <li>Java is used in enterprise applications</li>
+        <li>Both JavaScript and Java are object-oriented</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Python_and_Ruby">
+      <header>
+        <h2>Python and Ruby</h2>
+      </header>
+      <p>Python is a high-level programming language known for its readability and versatility.</p>
+      <p>Ruby is an interpreted language focused on simplicity and productivity, often used in web development.</p>
+      <p>Both languages are dynamic and object-oriented, with Python being used for a variety of applications from data science to web development.</p>
+      <code>def greet(name):</code>
+      <code>  print(f"Hello, {name}!")</code>
+      <code>class Person:</code>
+      <code>  def __init__(self, name):</code>
+      <code>    self.name = name</code>
+      <ul>
+        <li>Python is great for machine learning</li>
+        <li>Ruby on Rails is a popular framework</li>
+        <li>Python has extensive libraries for data analysis</li>
+        <li>Ruby is known for its elegant syntax</li>
+        <li>Both support functional and object-oriented paradigms</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="APIs_and_Data">
+      <header>
+        <h2>APIs and Data</h2>
+      </header>
+      <p>APIs (Application Programming Interfaces) allow different software systems to communicate with each other.</p>
+      <p>APIs are used to interact with databases, retrieve data, and send data back to a server or client.</p>
+      <p>Data is often exchanged in JSON or XML formats through API requests.</p>
+      <code>fetch('/data').then(response =&gt; response.json()).then(data =&gt; console.log(data));</code>
+      <code>const apiUrl = "https://api.example.com/data";</code>
+      <code>$.ajax({ url: apiUrl, type: "GET", success: function(response) { console.log(response); } });</code>
+      <code>const data = { name: "John", age: 30 }; </code>
+      <code>const headers = { "Content-Type": "application/json" };</code>
+      <ul>
+        <li>REST APIs use HTTP requests</li>
+        <li>APIs often return data in JSON format</li>
+        <li>GET and POST are the most common HTTP methods</li>
+        <li>Authentication is important for secure APIs</li>
+        <li>APIs can be public or private</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Frameworks_and_Libraries">
+      <header>
+        <h2>Frameworks and Libraries</h2>
+      </header>
+      <p>Frameworks and libraries are tools that help developers build applications faster and more efficiently.</p>
+      <p>Frameworks usually provide a structure for an app, while libraries offer reusable functions or components.</p>
+      <p>Popular frameworks include React, Angular, and Django, while libraries like Lodash and jQuery help with specific tasks.</p>
+      <code>import React from 'react';</code>
+      <code>import { useState } from 'react';</code>
+      <code>const app = express();</code>
+      <code>app.get('/', (req, res) =&gt; res.send('Hello World'));</code>
+      <code>import pandas as pd;</code>
+      <ul>
+        <li>React is a popular JavaScript library for building UIs</li>
+        <li>Angular is a comprehensive framework for front-end development</li>
+        <li>Django is a Python framework for web development</li>
+        <li>jQuery simplifies DOM manipulation</li>
+        <li>Vue.js is a progressive JavaScript framework</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

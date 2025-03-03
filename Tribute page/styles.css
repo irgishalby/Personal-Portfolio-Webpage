@@ -1,0 +1,137 @@
+/* Global Styles */
+:root {
+  --font-family: 'Times New Roman', sans-serif;
+  --background-color: #ffffff; 
+  --primary-color: #000000; 
+  --secondary-color: #a5a5a5; 
+  --text-color: #333333;  
+  --highlight-color: #666666;  
+  --quote-background: #f2f2f2;
+  --footer-background: #000000;
+  --footer-link-color: #888888;
+}
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;}
+  
+  /* Header Styles */
+  .header {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  .header-content h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+  }
+  
+  .header-content p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+  }
+  
+  /* Image Section */
+  #image-section {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 1.5rem;
+  }
+  
+  #img-div {
+    display: inline-block;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #image {
+    display: block;
+    max-width: 100%;
+    border-radius: 8px;
+    border: 3px solid var(--primary-color);
+  }
+  
+  #img-caption {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--text-color);
+  }
+  
+  /* Tribute Info Section */
+  #tribute-info {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .headline {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .list-of-time {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .list-of-time li {
+    margin-bottom: 1rem;
+  }
+  
+  .time {
+    font-weight: bold;
+    color: var(--highlight-color);
+  }
+  
+  /* Quote Styles */
+  .quote {
+    background-color: var(--quote-background);
+    padding: 1.5rem;
+    margin: 2rem auto;
+    text-align: center;
+    font-style: italic;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quote cite {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: var(--highlight-color);
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: var(--footer-background);
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .footer a {
+    color: var(--footer-link-color);
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }

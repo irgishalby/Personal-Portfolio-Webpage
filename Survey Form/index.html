@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Name University Seminar</h1>
+  <p id="description">Tell us your thoughts</p>
+  <form id="survey-form">
+    <fieldset>
+      <div>
+        <label for="name" id="name-label">Name</label>
+        <input id="name" type="text" name="name" required placeholder="Enter your name">
+      </div>
+
+      <div>
+        <label for="email" id="email-label">Email</label>
+        <input id="email" type="email" name="email" required placeholder="Enter your email">
+      </div>
+
+      <div>
+        <label for="number" id="number-label">Age (optional)</label>
+        <input id="number" type="number" name="number" min="13" max="120" placeholder="Enter your age">
+      </div>
+
+      <div>
+        <label for="dropdown">What's your role</label>
+        <select id="dropdown">
+          <option disabled selected>Choose one</option>
+          <option>Lecturer</option>
+          <option>Student</option>
+          <option>Guest</option>
+        </select>
+      </div>
+
+      <div>
+        <p>What is your gender?</p>
+        <label>
+          <input type="radio" id="option1" name="gender" value="male"> Male
+        </label><br>
+        <label>
+          <input type="radio" id="option2" name="gender" value="female"> Female
+        </label><br>
+        <label>
+          <input type="radio" id="option3" name="gender" value="other"> Other
+        </label>
+      </div>
+
+      <div>
+        <p>How do you know us?</p>
+        <label>
+            <input type="checkbox" value="sosmed"> Social media
+        </label>
+        <label>
+            <input type="checkbox" value="friends"> Friends
+        </label>
+        <label>
+            <input type="checkbox" value="others"> Others
+        </label>
+      </div>
+
+      <div>
+        <p>Give us your thoughts on this form:</p>
+        <textarea placeholder="Write your comments here"></textarea>
+      </div>
+
+      <input id="submit" type="submit" value="Submit">
+    </fieldset>
+  </form>
+</body>
+</html>
